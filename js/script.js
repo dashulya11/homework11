@@ -10,7 +10,7 @@
 // 7; // true
 // 10; // false
 let result = true;
-let number = +prompt('Введите любое число:');
+const number = +prompt('Введите любое число:');
 if (number > 1 && !isNaN(number)) {
     for (let i = 2; i < number; i++) {
         if (number % i === 0) {
