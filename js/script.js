@@ -18,9 +18,9 @@ if (number > 1 && !isNaN(number)) {
             break;
         }
     }
-    alert(result);
+    console.log(result);
 } else {
-    alert('Возможно вы ввели 1 или не число!');
+    console.log('Возможно вы ввели 1 или не число!');
 }
 
 
