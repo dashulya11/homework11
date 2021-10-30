@@ -10,8 +10,8 @@
 // 7; // true
 // 10; // false
 let result = true;
-const number = +prompt('Введите любое число:');
-if (number > 1 && !isNaN(number)) {
+const number = prompt('Введите любое число:');
+if ( !isNaN(number) && number > 1 && number.trim() !== `` && number !== null) {
     for (let i = 2; i < number; i++) {
         if (number % i === 0) {
             result = false;
@@ -20,10 +20,5 @@ if (number > 1 && !isNaN(number)) {
     }
     console.log(result);
 } else {
-    console.log('Возможно вы ввели 1 или не число!');
+    console.log('Возможно вы ввели число меньше 1 или не число, или пустую строку!');
 }
-
-
-
-
-
